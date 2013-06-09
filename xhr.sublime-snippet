@@ -1,0 +1,23 @@
+<snippet>
+	<content><![CDATA[
+var request;
+
+if (window.XMLHttpRequest) 
+	request = new XMLHttpRequest();
+else 
+	request = new ActiveXObject("Microsoft.XMLHTTP");
+
+request.open('GET', ${1:filepath});
+request.onreadystatechange = function() {
+	if ((request.readyState === 4) && (request.status === 200)) {
+		${2://Do Something}
+
+	}
+}
+request.send();
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>xhr</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

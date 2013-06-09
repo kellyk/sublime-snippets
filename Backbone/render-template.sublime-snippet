@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+this.\$el.html( this.template(this.model.attributes) );
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>thisel</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
